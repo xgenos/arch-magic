@@ -88,11 +88,11 @@ cd $HOME
 git clone --separate-git-dir=$HOME/.dotfiles https://github.com/bugswriter/dotfiles.git tmpdotfiles
 rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
-git clone --depth=1 https://github.com/Bugswriter/dwm.git ~/.local/src/dwm
+git clone --depth=1 https://github.com/xgenos/dwm.git ~/.local/src/dwm
 sudo make -C ~/.local/src/dwm install
-git clone --depth=1 https://github.com/Bugswriter/st.git ~/.local/src/st
+git clone --depth=1 https://github.com/xgenos/st.git ~/.local/src/st
 sudo make -C ~/.local/src/st install
-git clone --depth=1 https://github.com/Bugswriter/dmenu.git ~/.local/src/dmenu
+git clone --depth=1 https://github.com/xgenos/dmenu.git ~/.local/src/dmenu
 sudo make -C ~/.local/src/dmenu install
 git clone --depth=1  https://aur.archlinux.org/paru.git ~/.local/src/paru
 cd ~/.local/src/paru
